@@ -11,13 +11,15 @@
   },
   "dependencies": {
     "@react-native-vector-icons/fontawesome6": "^6.5.2-alpha.12",
+    "@react-native-voice/voice": "^3.2.4",
     "@react-navigation/native": "^6.1.17",
-    "@sugar-ai/copilot-one-js": "0.0.32",
+    "@sugar-ai/copilot-one-js": "file:.yalc/@sugar-ai/copilot-one-js",
     "ansi-regex": "^6.0.1",
     "react": "18.2.0",
     "react-native": "0.74.1",
     "react-native-paper": "^5.12.3",
     "react-native-svg": "^15.2.0",
+    "react-native-tts": "^4.1.0",
     "zod": "^3.23.8"
   },
   "devDependencies": {

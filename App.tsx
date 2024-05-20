@@ -45,6 +45,7 @@ import {
 
 import {
   TextAssistant,
+  VoiceAssistant,
   CopilotProvider,
   useCopilot,
 } from '@sugar-ai/copilot-one-js';
@@ -83,6 +84,8 @@ let copilotConfig = {
     },
     successResponse: 'Task Done',
     failureResponse: 'I am not able to do this',
+    voice: '',
+    lang: 'en-US',
   },
   style: {
     container: {position: 'bottom-right'},
@@ -308,7 +311,7 @@ const TodoApp = () => {
       </View>
 
       {/* Voice Assistant */}
-      <TextAssistant
+      <VoiceAssistant
         id={'preview'}
         promptTemplate={copilotPackage}
         messageStyle={''}
