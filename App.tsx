@@ -65,16 +65,16 @@ enum recurringType {
   yearly,
 }
 
-const copilotPackage = 'pulkit.ag02/copilot-1/onboard-default/0.0.1';
+const copilotPackage = 'sugar/copilotexample/todoexample/0.0.3';
 
 let copilotConfig = {
   // copilotId: "da82abb5-cf74-448b-b94d-7e17245cc5d9",
-  copilotId: '6c734b77-e340-4af4-83ca-c8daccf5fc43',
+  copilotId: 'da82abb5-cf74-448b-b94d-7e17245cc5d9',
   server: {
     // endpoint: "https://play.sugarcaneai.dev/api",
     // token: "pk-m0j6E8CfMkedk0orAk0gXyALpOZULs3rSiYulaPFXd2rPlin",
-    endpoint: 'http://192.168.1.5:3000/api',
-    token: 'pk-hr5BLm2v1ThejcvNw1cmUhJnOMi1nnh3g1SgNx1RDNYRfvnP',
+    endpoint: 'https://play.sugarcaneai.dev/api',
+    token: 'pk-m0j6E8CfMkedk0orAk0gXyALpOZULs3rSiYulaPFXd2rPlin',
   },
 
   ai: {
@@ -85,7 +85,7 @@ let copilotConfig = {
     successResponse: 'Task Done',
     failureResponse: 'I am not able to do this',
     voice: '',
-    lang: 'en-US',
+    lang: 'hi-IN',
   },
   style: {
     container: {position: 'bottom-right'},
