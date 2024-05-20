@@ -25,10 +25,6 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Description of why you require the use of the microphone</string>
-	<key>NSSpeechRecognitionUsageDescription</key>
-	<string>Description of why you require the use of the speech recognition</string>
 	<dict>
 	  <!-- Do not change NSAllowsArbitraryLoads to true, or you will risk app rejection! -->
 		<key>NSAllowsArbitraryLoads</key>
@@ -52,5 +48,9 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSMicrophoneUsageDescription</key>
+  <string>Description of why you require the use of the microphone</string>
+  <key>NSSpeechRecognitionUsageDescription</key>
+  <string>Description of why you require the use of the speech recognition</string>
 </dict>
 </plist>
