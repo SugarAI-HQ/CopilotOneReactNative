@@ -43,15 +43,11 @@ import {
   ScrollView,
 } from 'react-native';
 
-import {
-  TextAssistant,
-  VoiceAssistant,
-  CopilotProvider,
-  useCopilot,
-} from '@sugar-ai/copilot-one-js';
+import {useCopilot, CopilotProvider} from '@sugar-ai/core';
+
+import {VoiceAssistant} from '@sugar-ai/copilot-one-rn';
 import {useTheme} from '@react-navigation/native';
-import {FilterType, SettingsType, TodoSchemaType} from './schema/todoSchema';
-import {IconButton} from 'react-native-paper';
+// import {FilterType, SettingsType, TodoSchemaType} from './schema/todoSchema';
 
 const windowHeight = Dimensions.get('window').height;
 const maxHeight = windowHeight - 120;
@@ -134,8 +130,7 @@ const TodoApp = () => {
   const deleteTodo = (task: string) => {
     setTodos(
       (todos as any).filter(
-        (todo: TodoSchemaType) =>
-          todo.task.toLowerCase() !== task.toLowerCase(),
+        (todo: any) => todo.task.toLowerCase() !== task.toLowerCase(),
       ),
     );
   };
@@ -159,7 +154,7 @@ const TodoApp = () => {
 
   const markTodoAsDone = (task: string) => {
     setTodos(
-      (todos as any).map((todo: TodoSchemaType) => {
+      (todos as any).map((todo: any) => {
         if (todo.task.toLowerCase() === task.toLowerCase()) {
           return {...todo, completed: !todo.completed}; // Toggle completed status
         }
@@ -170,7 +165,7 @@ const TodoApp = () => {
 
   const markTodoAsDoneById = (todoId: number) => {
     setTodos(
-      (todos as any).map((todo: TodoSchemaType) => {
+      (todos as any).map((todo: any) => {
         if (todo.id == todoId) {
           return {...todo, completed: true};
         }
@@ -210,9 +205,9 @@ const TodoApp = () => {
 
     switch (filter) {
       case 'remaining':
-        return todos.filter((todo: TodoSchemaType) => !todo.completed);
+        return todos.filter((todo: any) => !todo.completed);
       case 'done':
-        return todos.filter((todo: TodoSchemaType) => todo.completed);
+        return todos.filter((todo: any) => todo.completed);
       default:
         return todos;
     }
