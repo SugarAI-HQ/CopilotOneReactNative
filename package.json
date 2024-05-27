@@ -10,6 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@dashdoc/react-native-system-sounds": "^1.1.0",
     "@react-native-vector-icons/fontawesome6": "^6.5.2-alpha.12",
     "@react-navigation/native": "^6.1.17",
     "@sugar-ai/copilot-one-rn": "0.0.2",

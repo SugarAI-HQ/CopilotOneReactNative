@@ -78,6 +78,10 @@ let copilotConfig = {
     defaultPromptVariables: {
       '#AGENT_NAME': 'Tudy',
     },
+    successSound: {
+      android: 24,
+      ios: 1256,
+    },
     successResponse: 'Task Done',
     failureResponse: 'I am not able to do this',
     voice: '',
